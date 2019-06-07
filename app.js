@@ -18,3 +18,29 @@ function myMove() {
 
 }
 
+//visible not visible background
+
+var elembg = document.getElementById("backgroundnyan");
+var elembtn = document.getElementById("button");
+
+function hideBackground() {
+    elembg.style.display = "none";
+    elembtn.style.display = "block";
+}
+
+
+function showBackground() {
+    elembg.style.display = "block";
+    elembtn.style.display = "none";
+    setTimeout(hideBackground, 10000);
+}
+var x = document.getElementById("nyansong");
+
+function playAudio (){
+    x.play();
+    setTimeout(pauseAudio, 10000);
+}
+
+function pauseAudio (){
+    x.pause();
+}

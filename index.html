@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="hideBackground()">
         
     <div id="container">
                <div id="button" class="button">
-                   <button onclick="myMove()">Click me!</button>
+                   <button onclick="myMove(); showBackground();playAudio()">Click me!</button>
               </div>
                    
         
               <img id="nyan" style="display: none" src="img/cat.png" alt="cat">  
+             
+             <img id ='backgroundnyan' src="/img/backgroundnyan.jpg" alt ='background'>
+             <audio id="nyansong"src="./audio/Nyanyanyanyanyanyanya.mp3"></audio>
 
-        
 </div>
     <script src="app.js"></script>
 </body>
